@@ -109,7 +109,11 @@ $(document).ready(function() {
         }
 
         // if pokemon are ready for display load button
-        if(pokemonArr) createButton();
+        // clear errors
+        if(pokemonArr){
+            createButton();
+            errorDiv.html('');
+        }
     }
 
     main();

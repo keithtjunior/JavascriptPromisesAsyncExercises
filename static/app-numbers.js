@@ -24,7 +24,7 @@ $(document).ready(function() {
         }
     }
 
-    async function getFavNumbers(num, count) {
+    async function getFavFacts(num, count) {
         try {
             for (let i in [...Array(count).keys()]) {
                 let res = await axios.get(`http://numbersapi.com/${num}?json`);
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
     getFavNum(7);
     getMultiNum(1, 10);
-    getFavNumbers(7, 4);
+    getFavFacts(7, 4);
 
 });
 
